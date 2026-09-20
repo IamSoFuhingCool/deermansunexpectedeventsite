@@ -6,7 +6,7 @@
 
 /* 2. Page & Body Setup */
 body {
-  zoom: 75%; /* Scales the entire site layout by 1.5x */
+  zoom: 75%;
   margin: 0;
   padding: 0;
   background-color: #ffffff;
