@@ -1,0 +1,30 @@
+main {
+  /* Matching site fonts and background */
+  font-family: inherit;
+  --color-canvas-default: transparent;
+  --color-canvas-subtle: #fbf0f5;
+  --color-border-default: #e6b3cd;
+  --color-border-muted: #e6b3cd;
+  --color-fg-default: #4a3b42;
+  --color-fg-muted: #8c6f7d;
+
+  /* Custom Green Button to Pastel Pink Button */
+  --color-btn-primary-bg: #e6b3cd;
+  --color-btn-primary-hover-bg: #d99cb3;
+  --color-btn-primary-border: #d99cb3;
+  --color-btn-primary-text: #ffffff;
+}
+
+/* Rounded inputs and matching pop borders */
+.giscus-frame, .input-contrast, .form-control {
+  border-radius: 8px !important;
+  border-color: #e6b3cd !important;
+}
+
+/* Custom button styling */
+.btn-primary {
+  background-color: #e6b3cd !important;
+  border: 2px solid #d99cb3 !important;
+  color: #ffffff !important;
+  font-weight: bold;
+}
