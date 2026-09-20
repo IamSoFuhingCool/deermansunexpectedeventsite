@@ -12,3 +12,5 @@
   - comments.html
   - newsletters/
 </details>
+
+https://iamsofuhingcool.github.io/deermansunexpectedeventsite/index.html
