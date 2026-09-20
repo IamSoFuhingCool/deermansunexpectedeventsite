@@ -1,0 +1,381 @@
+/* 1. Define your custom font */
+@font-face {
+  font-family: 'MainFont';
+  src: url('fonts/main.ttf') format('truetype');
+}
+
+/* 2. Page & Body Setup */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #000000; /* Dark text so it is visible on white */
+  font-family: 'MainFont', sans-serif; /* Your custom font applied site-wide */
+}
+
+/* 3. Sticky Navigation Bar */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #ffffff;
+  padding: 15px 0;
+  text-align: center;
+  border-bottom: 3px solid #e6b3cd;
+}
+
+.navbar a {
+  color: #000000;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.navbar a:hover {
+  color: #e6b3cd; /* Soft pink on hover */
+}
+
+/* 4. Top-Centered Container */
+.top-centered-container {
+  text-align: center;
+  padding-top: 40px;
+}
+
+/* 5. Title Image */
+.title-image {
+  width: 20%;
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto 15px auto;
+}
+
+/* 6. Headings */
+h1 {
+  margin: 0;
+  color: #e6b3cd;
+}
+/* Game Information Container */
+.game-info {
+  max-width: 600px;        /* Prevents the text lines from stretching too wide */
+  margin: 20px auto 0 auto;/* Centers the box and adds space above it */
+  padding: 0 20px;         /* Adds side padding for mobile screens */
+}
+
+/* Tagline or Highlight Text */
+.game-info .tagline {
+  font-size: 18px;
+  font-weight: bold;
+  color: #e6b3cd;          /* Matches your title accent color */
+  margin-bottom: 10px;
+}
+
+/* Regular Description Paragraphs */
+.game-info p {
+  font-size: 14px;
+  line-height: 1.6;        /* Adds vertical spacing between lines for readability */
+  color: #333333;          /* Dark grey text for soft contrast on white */
+  margin-bottom: 15px;
+}
+
+/* Email Signup Box Container */
+.signup-container {
+  max-width: 500px;
+  margin: 30px auto 40px auto;
+  padding: 25px;
+  background-color: #fcf6f9;        /* Soft pastel background */
+  border: 3px solid #e6b3cd;        /* Matches your accent color */
+  border-radius: 12px;
+  box-shadow: 4px 4px 0px #e6b3cd;   /* Subtle retro pop shadow */
+}
+
+.signup-container h2 {
+  font-size: 16px;
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.signup-container p {
+  font-size: 12px;
+  color: #555555;
+  margin-bottom: 20px;
+}
+
+/* Form Controls */
+.signup-form input[type="email"] {
+  width: 75%;
+  max-width: 320px;
+  padding: 12px;
+  border: 2px solid #e6b3cd;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 12px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.signup-form input[type="email"]:focus {
+  border-color: #000000;
+}
+
+.signup-form button {
+  margin-top: 12px;
+  padding: 12px 24px;
+  background-color: #e6b3cd;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease;
+}
+
+.signup-form button:hover {
+  background-color: #d49ab9;
+  color: #000000;
+}
+/* Styling links inside paragraphs */
+p a {
+  color: #e6b3cd;              /* Accent pastel pink */
+  font-weight: bold;
+  text-decoration: underline;   /* Or 'none' if you want no underline */
+}
+
+p a:hover {
+  color: #000000;              /* Change color when hovered */
+}
+
+a[target="_blank"]::after {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-left: 4px;
+  background-image: url('images/youtube.svg'); /* Path to your icon */
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+/* Archive List Container */
+.archive-list {
+  max-width: 600px;
+  margin: 30px auto 40px auto;
+  padding: 0 20px;
+  text-align: left; /* Keeps titles and dates aligned left inside cards */
+}
+
+/* Individual Issue Card */
+.issue-card {
+  background-color: #fcf6f9;
+  border: 3px solid #e6b3cd;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 4px 4px 0px #e6b3cd;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.issue-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 6px 6px 0px #e6b3cd;
+}
+
+.issue-card h2 {
+  margin: 0 0 5px 0;
+  font-size: 18px;
+}
+
+.issue-card h2 a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.issue-card h2 a:hover {
+  color: #e6b3cd;
+}
+
+.issue-date {
+  font-size: 11px;
+  color: #777777;
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.issue-card p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #333333;
+}
+/* Archive List Container */
+.archive-list {
+  max-width: 600px;
+  margin: 30px auto 40px auto;
+  padding: 0 20px;
+  text-align: left; /* Keeps titles and dates aligned left inside cards */
+}
+
+/* Individual Issue Card */
+.issue-card {
+  background-color: #fcf6f9;
+  border: 3px solid #e6b3cd;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 4px 4px 0px #e6b3cd;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.issue-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 6px 6px 0px #e6b3cd;
+}
+
+.issue-card h2 {
+  margin: 0 0 5px 0;
+  font-size: 18px;
+}
+
+.issue-card h2 a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.issue-card h2 a:hover {
+  color: #e6b3cd;
+}
+
+.issue-date {
+  font-size: 11px;
+  color: #777777;
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.issue-card p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #333333;
+}
+/* Individual Newspaper Article Container */
+.newspaper-article {
+  max-width: 650px;
+  margin: 20px auto 50px auto;
+  padding: 30px;
+  background-color: #fcf6f9;
+  border: 3px solid #e6b3cd;
+  border-radius: 12px;
+  box-shadow: 6px 6px 0px #e6b3cd;
+  text-align: left;
+}
+
+/* Issue Header Styles */
+.issue-header {
+  text-align: center;
+}
+
+.issue-number {
+  font-size: 12px;
+  font-weight: bold;
+  color: #e6b3cd;
+  letter-spacing: 1px;
+}
+
+.issue-header h1 {
+  margin: 8px 0;
+  font-size: 24px;
+  color: #000000;
+}
+
+.issue-date {
+  font-size: 11px;
+  color: #777777;
+  margin: 0;
+}
+
+/* Decorative Divider Line */
+.divider {
+  border: 0;
+  height: 2px;
+  background-color: #e6b3cd;
+  margin: 20px 0;
+}
+
+/* Article Image */
+.article-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #e6b3cd;
+  margin-bottom: 20px;
+}
+
+/* Article Text Elements */
+.article-body h2 {
+  font-size: 16px;
+  color: #e6b3cd;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.article-body p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #333333;
+  margin-bottom: 15px;
+}
+
+/* Article Footer and Back Button */
+.article-footer {
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid #e6b3cd;
+}
+
+.back-link {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.back-link:hover {
+  color: #e6b3cd;
+}
+/* Comment Form Styling */
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.input-field {
+  width: 90%;
+  max-width: 400px;
+  padding: 10px;
+  border: 2px solid #e6b3cd;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 13px;
+  box-sizing: border-box;
+}
+
+.textarea-field {
+  resize: vertical;
+}
+
+.comments-list {
+  max-width: 600px;
+  margin: 30px auto;
+  text-align: left;
+}
