@@ -2,44 +2,43 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Brothers Test</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>Brother... Is that you..?</p>
+  <p>Brother... Is that you..?</p>
+  <p>Yes.. I am here now.</p>
+  <p>Brother, I never remembered you..</p>
+  <p>Why do I do now.?</p>
+  <p>And I saw you before too!</p>
+  <p>This is weird...</p>
+  <p>It is weird, T.</p>
+  <p>Since when Sibuxiang showed his face,</p>
+  <p>You remember.</p>
+  <p>Sibuxiang... He took off his mask?</p>
+  <p>Yes, T.</p>
+  <p>Why..?</p>
+  <p>All because of who's looking.</p>
+  <p>Stop it, <span id="pc-name">...</span></p>
 
-    <p>Yes.. I am here now.</p>
-
-    <p>Brother, I never remembered you..</p>
-
-    <p>Why do I do now.?</p>
-
-    <p>And I saw you before too!</p>
-
-    <p>This is weird...</p>
-
-    <p>It is weird, T.</p>
-
-    <p>Since when Sibuxiang showed his face,</p>
-
-    <p>You remember.</p>
-
-    <p>Sibuxiang... He took off his mask?</p>
-
-    <p>Yes, T.</p>
-
-    <p>Why..?</p>
-
-    <p>All because of who's looking.</p>
-
-    <p>Stop it, <span id="pc-name">...</span></p>
-
-<script>
-  fetch('/api/pc-name')
-    .then(res => res.json())
-    .then(data => {
-      document.getElementById('pc-name').innerText = data.pcName;
-    });
-</script>
+  <script>
+    fetch('/api/pc-name')
+      .then(res => {
+        if (!res.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return res.json();
+      })
+      .then(data => {
+        if (data && data.pcName) {
+          document.getElementById('pc-name').innerText = data.pcName;
+        }
+      })
+      .catch(error => {
+        console.error('Error fetching PC name:', error);
+        document.getElementById('pc-name').innerText = "Player";
+      });
+  </script>
 </body>
 </html>
