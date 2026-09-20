@@ -1,0 +1,14 @@
+/* style.css */
+@font-face {
+  font-family: 'MainFont';
+  src: url('../fonts/main.ttf') format('truetype');
+}
+
+body {
+  zoom: 75%;
+  margin: 0;
+  padding: 0;
+  background-color: #000000; /* Black background */
+  color: #ffffff;            /* White text */
+  font-family: 'MainFont', sans-serif;
+}
