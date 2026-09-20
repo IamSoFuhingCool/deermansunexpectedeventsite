@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Brothers Test</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p>Brother... Is that you..?</p>
+
+    <p>Yes.. I am here now.</p>
+
+    <p>Brother, I never remembered you..</p>
+
+    <p>Why do I do now.?</p>
+
+    <p>And I saw you before too!</p>
+
+    <p>This is weird...</p>
+
+    <p>It is weird, T.</p>
+
+    <p>Since when Sibuxiang showed his face,</p>
+
+    <p>You remember.</p>
+
+    <p>Sibuxiang... He took off his mask?</p>
+
+    <p>Yes, T.</p>
+
+    <p>Why..?</p>
+
+    <p>All because of who's looking.</p>
+
+    <p>Stop it, <span id="pc-name">...</span></p>
+
+<script>
+  fetch('/api/pc-name')
+    .then(res => res.json())
+    .then(data => {
+      document.getElementById('pc-name').innerText = data.pcName;
+    });
+</script>
+</body>
+</html>
