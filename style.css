@@ -379,3 +379,20 @@ a[target="_blank"]::after {
   margin: 30px auto;
   text-align: left;
 }
+/* Outer box styling for Giscus comments */
+.comments-box {
+  max-width: 650px;
+  margin: 30px auto 50px auto;
+  padding: 25px;
+  background-color: #fcf6f9;
+  border: 3px solid #e6b3cd;
+  border-radius: 12px;
+  box-shadow: 6px 6px 0px #e6b3cd;
+  text-align: left;
+}
+
+/* Ensures the Giscus iframe fills the card width */
+.giscus, .giscus-frame {
+  width: 100%;
+  min-height: 150px;
+}
