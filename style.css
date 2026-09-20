@@ -9,8 +9,10 @@ body {
   margin: 0;
   padding: 0;
   background-color: #ffffff;
-  color: #000000; /* Dark text so it is visible on white */
-  font-family: 'MainFont', sans-serif; /* Your custom font applied site-wide */
+  color: #000000;
+  font-family: 'MainFont', sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
 }
 
 /* 3. Sticky Navigation Bar */
@@ -19,100 +21,102 @@ body {
   top: 0;
   z-index: 1000;
   background-color: #ffffff;
-  padding: 15px 0;
+  padding: 22px 0;
   text-align: center;
-  border-bottom: 3px solid #e6b3cd;
+  border-bottom: 4px solid #e6b3cd;
 }
 
 .navbar a {
   color: #000000;
   text-decoration: none;
-  margin: 0 15px;
+  margin: 0 22px;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 30px;
   text-transform: uppercase;
 }
 
 .navbar a:hover {
-  color: #e6b3cd; /* Soft pink on hover */
+  color: #e6b3cd;
 }
 
 /* 4. Top-Centered Container */
 .top-centered-container {
   text-align: center;
-  padding-top: 40px;
+  padding-top: 60px;
 }
 
 /* 5. Title Image */
 .title-image {
-  width: 20%;
-  max-width: 300px;
+  width: 30%;
+  max-width: 450px;
   height: auto;
   display: block;
-  margin: 0 auto 15px auto;
+  margin: 0 auto 22px auto;
 }
 
 /* 6. Headings */
 h1 {
   margin: 0;
   color: #e6b3cd;
+  font-size: 36px;
 }
+
 /* Game Information Container */
 .game-info {
-  max-width: 600px;        /* Prevents the text lines from stretching too wide */
-  margin: 20px auto 0 auto;/* Centers the box and adds space above it */
-  padding: 0 20px;         /* Adds side padding for mobile screens */
+  max-width: 900px;
+  margin: 30px auto 0 auto;
+  padding: 0 30px;
 }
 
 /* Tagline or Highlight Text */
 .game-info .tagline {
-  font-size: 18px;
+  font-size: 27px;
   font-weight: bold;
-  color: #e6b3cd;          /* Matches your title accent color */
-  margin-bottom: 10px;
+  color: #e6b3cd;
+  margin-bottom: 15px;
 }
 
 /* Regular Description Paragraphs */
 .game-info p {
-  font-size: 14px;
-  line-height: 1.6;        /* Adds vertical spacing between lines for readability */
-  color: #333333;          /* Dark grey text for soft contrast on white */
-  margin-bottom: 15px;
+  font-size: 21px;
+  line-height: 1.6;
+  color: #333333;
+  margin-bottom: 22px;
 }
 
 /* Email Signup Box Container */
 .signup-container {
-  max-width: 500px;
-  margin: 30px auto 40px auto;
-  padding: 25px;
-  background-color: #fcf6f9;        /* Soft pastel background */
-  border: 3px solid #e6b3cd;        /* Matches your accent color */
-  border-radius: 12px;
-  box-shadow: 4px 4px 0px #e6b3cd;   /* Subtle retro pop shadow */
+  max-width: 750px;
+  margin: 45px auto 60px auto;
+  padding: 38px;
+  background-color: #fcf6f9;
+  border: 4px solid #e6b3cd;
+  border-radius: 18px;
+  box-shadow: 6px 6px 0px #e6b3cd;
 }
 
 .signup-container h2 {
-  font-size: 16px;
+  font-size: 24px;
   color: #000000;
   margin-top: 0;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 
 .signup-container p {
-  font-size: 12px;
+  font-size: 18px;
   color: #555555;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 /* Form Controls */
 .signup-form input[type="email"] {
   width: 75%;
-  max-width: 320px;
-  padding: 12px;
-  border: 2px solid #e6b3cd;
-  border-radius: 6px;
+  max-width: 480px;
+  padding: 18px;
+  border: 3px solid #e6b3cd;
+  border-radius: 9px;
   font-family: inherit;
-  font-size: 12px;
+  font-size: 18px;
   outline: none;
   box-sizing: border-box;
 }
@@ -122,14 +126,14 @@ h1 {
 }
 
 .signup-form button {
-  margin-top: 12px;
-  padding: 12px 24px;
+  margin-top: 18px;
+  padding: 18px 36px;
   background-color: #e6b3cd;
   color: #ffffff;
   border: none;
-  border-radius: 6px;
+  border-radius: 9px;
   font-family: inherit;
-  font-size: 12px;
+  font-size: 18px;
   font-weight: bold;
   cursor: pointer;
   text-transform: uppercase;
@@ -140,55 +144,57 @@ h1 {
   background-color: #d49ab9;
   color: #000000;
 }
+
 /* Styling links inside paragraphs */
 p a {
-  color: #e6b3cd;              /* Accent pastel pink */
+  color: #e6b3cd;
   font-weight: bold;
-  text-decoration: underline;   /* Or 'none' if you want no underline */
+  text-decoration: underline;
 }
 
 p a:hover {
-  color: #000000;              /* Change color when hovered */
+  color: #000000;
 }
 
 a[target="_blank"]::after {
   content: "";
   display: inline-block;
-  width: 12px;
-  height: 12px;
-  margin-left: 4px;
-  background-image: url('images/youtube.svg'); /* Path to your icon */
+  width: 18px;
+  height: 18px;
+  margin-left: 6px;
+  background-image: url('images/youtube.svg');
   background-size: contain;
   background-repeat: no-repeat;
   vertical-align: middle;
 }
+
 /* Archive List Container */
 .archive-list {
-  max-width: 600px;
-  margin: 30px auto 40px auto;
-  padding: 0 20px;
-  text-align: left; /* Keeps titles and dates aligned left inside cards */
+  max-width: 900px;
+  margin: 45px auto 60px auto;
+  padding: 0 30px;
+  text-align: left;
 }
 
 /* Individual Issue Card */
 .issue-card {
   background-color: #fcf6f9;
-  border: 3px solid #e6b3cd;
-  border-radius: 10px;
-  padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: 4px 4px 0px #e6b3cd;
+  border: 4px solid #e6b3cd;
+  border-radius: 15px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 6px 6px 0px #e6b3cd;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .issue-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 6px 6px 0px #e6b3cd;
+  transform: translateY(-3px);
+  box-shadow: 9px 9px 0px #e6b3cd;
 }
 
 .issue-card h2 {
-  margin: 0 0 5px 0;
-  font-size: 18px;
+  margin: 0 0 8px 0;
+  font-size: 27px;
 }
 
 .issue-card h2 a {
@@ -201,80 +207,29 @@ a[target="_blank"]::after {
 }
 
 .issue-date {
-  font-size: 11px;
+  font-size: 16px;
   color: #777777;
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   font-weight: bold;
 }
 
 .issue-card p {
   margin: 0;
-  font-size: 13px;
+  font-size: 20px;
   line-height: 1.5;
   color: #333333;
 }
-/* Archive List Container */
-.archive-list {
-  max-width: 600px;
-  margin: 30px auto 40px auto;
-  padding: 0 20px;
-  text-align: left; /* Keeps titles and dates aligned left inside cards */
-}
 
-/* Individual Issue Card */
-.issue-card {
-  background-color: #fcf6f9;
-  border: 3px solid #e6b3cd;
-  border-radius: 10px;
-  padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: 4px 4px 0px #e6b3cd;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.issue-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 6px 6px 0px #e6b3cd;
-}
-
-.issue-card h2 {
-  margin: 0 0 5px 0;
-  font-size: 18px;
-}
-
-.issue-card h2 a {
-  color: #000000;
-  text-decoration: none;
-}
-
-.issue-card h2 a:hover {
-  color: #e6b3cd;
-}
-
-.issue-date {
-  font-size: 11px;
-  color: #777777;
-  display: block;
-  margin-bottom: 10px;
-  font-weight: bold;
-}
-
-.issue-card p {
-  margin: 0;
-  font-size: 13px;
-  line-height: 1.5;
-  color: #333333;
-}
 /* Individual Newspaper Article Container */
 .newspaper-article {
-  max-width: 650px;
-  margin: 20px auto 50px auto;
-  padding: 30px;
+  max-width: 975px;
+  margin: 30px auto 75px auto;
+  padding: 45px;
   background-color: #fcf6f9;
-  border: 3px solid #e6b3cd;
-  border-radius: 12px;
-  box-shadow: 6px 6px 0px #e6b3cd;
+  border: 4px solid #e6b3cd;
+  border-radius: 18px;
+  box-shadow: 9px 9px 0px #e6b3cd;
   text-align: left;
 }
 
@@ -284,89 +239,84 @@ a[target="_blank"]::after {
 }
 
 .issue-number {
-  font-size: 12px;
+  font-size: 18px;
   font-weight: bold;
   color: #e6b3cd;
   letter-spacing: 1px;
 }
 
 .issue-header h1 {
-  margin: 8px 0;
-  font-size: 24px;
+  margin: 12px 0;
+  font-size: 36px;
   color: #000000;
-}
-
-.issue-date {
-  font-size: 11px;
-  color: #777777;
-  margin: 0;
 }
 
 /* Decorative Divider Line */
 .divider {
   border: 0;
-  height: 2px;
+  height: 3px;
   background-color: #e6b3cd;
-  margin: 20px 0;
+  margin: 30px 0;
 }
 
 /* Article Image */
 .article-image {
   width: 100%;
   height: auto;
-  border-radius: 8px;
-  border: 2px solid #e6b3cd;
-  margin-bottom: 20px;
+  border-radius: 12px;
+  border: 3px solid #e6b3cd;
+  margin-bottom: 30px;
 }
 
 /* Article Text Elements */
 .article-body h2 {
-  font-size: 16px;
+  font-size: 24px;
   color: #e6b3cd;
-  margin-top: 25px;
-  margin-bottom: 10px;
+  margin-top: 38px;
+  margin-bottom: 15px;
 }
 
 .article-body p {
-  font-size: 14px;
+  font-size: 21px;
   line-height: 1.7;
   color: #333333;
-  margin-bottom: 15px;
+  margin-bottom: 22px;
 }
 
 /* Article Footer and Back Button */
 .article-footer {
-  margin-top: 30px;
-  padding-top: 15px;
-  border-top: 1px solid #e6b3cd;
+  margin-top: 45px;
+  padding-top: 22px;
+  border-top: 2px solid #e6b3cd;
 }
 
 .back-link {
   color: #000000;
   text-decoration: none;
   font-weight: bold;
-  font-size: 13px;
+  font-size: 20px;
 }
 
 .back-link:hover {
   color: #e6b3cd;
 }
+
 /* Comment Form Styling */
 .comment-form {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 18px;
   align-items: center;
 }
 
 .input-field {
   width: 90%;
-  max-width: 400px;
-  padding: 10px;
-  border: 2px solid #e6b3cd;
-  border-radius: 6px;
+  max-width: 600px;
+  padding: 15px;
+  border: 3px solid #e6b3cd;
+  border-radius: 9px;
   font-family: inherit;
-  font-size: 13px;
+  font-size: 20px;
   box-sizing: border-box;
 }
 
@@ -375,24 +325,89 @@ a[target="_blank"]::after {
 }
 
 .comments-list {
-  max-width: 600px;
-  margin: 30px auto;
+  max-width: 900px;
+  margin: 45px auto;
   text-align: left;
 }
+
 /* Outer box styling for Giscus comments */
 .comments-box {
-  max-width: 650px;
-  margin: 30px auto 50px auto;
-  padding: 25px;
+  max-width: 975px;
+  margin: 45px auto 75px auto;
+  padding: 38px;
   background-color: #fcf6f9;
-  border: 3px solid #e6b3cd;
-  border-radius: 12px;
-  box-shadow: 6px 6px 0px #e6b3cd;
+  border: 4px solid #e6b3cd;
+  border-radius: 18px;
+  box-shadow: 9px 9px 0px #e6b3cd;
   text-align: left;
 }
 
 /* Ensures the Giscus iframe fills the card width */
 .giscus, .giscus-frame {
   width: 100%;
-  min-height: 150px;
+  min-height: 225px;
+}
+/* Dedicated About Page Styles */
+.about-card {
+  max-width: 975px;
+  margin: 30px auto 75px auto;
+  padding: 45px;
+  background-color: #fcf6f9;
+  border: 4px solid #e6b3cd;
+  border-radius: 18px;
+  box-shadow: 9px 9px 0px #e6b3cd;
+  text-align: left;
+}
+
+.about-section {
+  margin-bottom: 35px;
+}
+
+.about-section h2 {
+  font-size: 27px;
+  color: #e6b3cd;
+  margin-top: 0;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.about-section p {
+  font-size: 21px;
+  line-height: 1.6;
+  color: #333333;
+  margin: 0;
+}
+
+/* Team Box Grid */
+/* 2-Column Team Box Grid */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Creates exactly 2 equal columns */
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.team-member {
+  background-color: #ffffff;
+  border: 4px solid #e6b3cd;
+  border-radius: 15px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 6px 6px 0px #e6b3cd;
+}
+
+.member-role {
+  font-size: 16px;
+  font-weight: bold;
+  color: #e6b3cd;
+  display: block;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.member-name {
+  font-size: 24px !important;
+  font-weight: bold;
+  color: #000000 !important;
+  margin: 0 !important;
 }
