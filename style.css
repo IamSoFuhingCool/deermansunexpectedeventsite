@@ -410,3 +410,28 @@ a[target="_blank"]::after {
   color: #000000 !important;
   margin: 0 !important;
 }
+/* Custom Music Preview Card */
+.music-box {
+  background-color: #ffffff;
+  border: 4px solid #e6b3cd;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 6px 6px 0px #e6b3cd;
+  text-align: center;
+}
+
+.music-title {
+  display: block;
+  font-weight: bold;
+  font-size: 18px;
+  color: #e6b3cd;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+.music-box audio {
+  width: 100%;
+  max-width: 500px;
+  outline: none;
+}
