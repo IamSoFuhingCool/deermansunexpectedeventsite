@@ -14,3 +14,5 @@
 </details>
 
 https://iamsofuhingcool.github.io/deermansunexpectedeventsite/index.html
+
+Support the project! [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Y7Q227ETBU)
